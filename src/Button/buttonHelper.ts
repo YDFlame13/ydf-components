@@ -3,8 +3,21 @@ import classNames from "classnames";
 import { btnClsPrefix } from "../../constant/classPrefix"
 
 import type { ButtonType } from ".";
+import type { ButtonShape } from ".";
 
-export const calculateClass = (type: ButtonType):string => {
+interface cClsProps {
+  type: ButtonType,
+  shape: ButtonShape,
+}
+
+export const calculateClass = ({
+  type,
+  shape,
+}: cClsProps):string => {
   const defaultClass = btnClsPrefix;
-  return classNames(defaultClass, `${btnClsPrefix}-${type}`);
+  return classNames(
+    defaultClass,
+    `${btnClsPrefix}-${type}`,
+    `${btnClsPrefix}-${shape}`,
+  );
 }
