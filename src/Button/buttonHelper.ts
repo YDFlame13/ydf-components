@@ -15,9 +15,12 @@ export const calculateClass = ({
   shape,
 }: cClsProps):string => {
   const defaultClass = btnClsPrefix;
-  return classNames(
-    defaultClass,
-    `${btnClsPrefix}-${type}`,
-    `${btnClsPrefix}-${shape}`,
-  );
+  const classes = [defaultClass];
+  if(type !== "default"){
+    classes.push(`${btnClsPrefix}-${type}`);
+  }
+  if(shape !== "default"){
+    classes.push(`${btnClsPrefix}-${shape}`);
+  }
+  return classNames(classes);
 }

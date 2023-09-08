@@ -1,15 +1,8 @@
 # Button
 
-```jsx
-import { Button } from 'ydf-components';
+`import { Button } from "ydf-components";`
 
-export default () => (
-  <>
-    <Button type="primary">Primary Button</Button>&nbsp;
-    <Button>Default Button</Button>&nbsp;
-    <Button type="dashed">Dashed Button</Button>&nbsp;
-    <Button type="text">Text Button</Button>&nbsp;
-    <Button type="link">Link Button</Button>&nbsp;
-  </>
-)
-```
+## Examples
+
+<code src="./dome/type.tsx">Type</code>
+<code src="./dome/shape.tsx">Shape</code>

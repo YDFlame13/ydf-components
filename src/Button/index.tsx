@@ -1,13 +1,13 @@
 import React from "react";
 import { calculateClass } from "./buttonHelper";
-import "./index.scss"
+import "./styles/index.scss"
 
-export type ButtonType = "primary" | "dashed" | "link" | "text" | "default" ;
+export type ButtonType = "default" | "primary" | "dashed" | "link" | "text";
 export type ButtonShape = "default" | "circle" | "round";
 
 interface ButtonProps {
   type?: ButtonType,
-  shape: ButtonShape,
+  shape?: ButtonShape,
   children?: React.ReactNode,
 }
 

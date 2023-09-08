@@ -1,11 +1,3 @@
-.ydf-btn {
-  font-size: 14px;
-  height: 32px;
-  min-width: 80px;
-  border-radius: 4px;
-  padding: 0 8px;
-}
-
 .ydf-btn-primary {
   background-color: #6f9bfa;
   border: none;
@@ -40,15 +32,5 @@
   color: #000;
   &:hover {
     background-color: #e4e1e1;
-  }
-}
-
-.ydf-btn-default {
-  background-color: #fff;
-  border: #867f7f solid 1px;
-  color: #000;
-  &:hover {
-    color: #6f9bfa;
-    border-color: #6f9bfa;
   }
 }
