@@ -8,3 +8,4 @@
 <code src="./dome/shape.tsx">Shape</code>
 <code src="./dome/size.tsx">Size</code>
 <code src="./dome/disabled.tsx">Disabled</code>
+<code src="./dome/block.tsx">Block</code>
