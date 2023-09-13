@@ -1,12 +1,13 @@
 .ydf-btn {
   font-size: 14px;
   height: 32px;
-  min-width: 80px;
+  min-width: 32px;
   border-radius: 4px;
   padding: 0 8px;
   background-color: #fff;
   border: #867f7f solid 1px;
   color: #000;
+  cursor: pointer;
   &:hover {
     color: #6f9bfa;
     border-color: #6f9bfa;
@@ -16,3 +17,4 @@
 @import "type";
 @import "shape";
 @import "size";
+@import "disabled";

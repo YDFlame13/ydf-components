@@ -7,3 +7,4 @@
 <code src="./dome/type.tsx">Type</code>
 <code src="./dome/shape.tsx">Shape</code>
 <code src="./dome/size.tsx">Size</code>
+<code src="./dome/disabled.tsx">Disabled</code>
