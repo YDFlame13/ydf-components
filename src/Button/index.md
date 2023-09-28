@@ -4,8 +4,10 @@
 
 ## Examples
 
-<code src="./dome/type.tsx">Type</code>
-<code src="./dome/shape.tsx">Shape</code>
-<code src="./dome/size.tsx">Size</code>
-<code src="./dome/disabled.tsx">Disabled</code>
-<code src="./dome/block.tsx">Block</code>
+<code src="./demo/type.tsx">Type</code>
+<code src="./demo/shape.tsx">Shape</code>
+<code src="./demo/size.tsx">Size</code>
+<code src="./demo/disabled.tsx">Disabled</code>
+<code src="./demo/block.tsx">Block</code>
+<code src="./demo/danger.tsx">Danger</code>
+<code src="./demo/ghost.tsx">Ghost</code>

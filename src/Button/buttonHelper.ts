@@ -1,4 +1,4 @@
-import classNames from "classnames";
+import classnames from "classnames";
 
 import { btnClsPrefix } from "../../constant/classPrefix"
 
@@ -7,7 +7,10 @@ import type {
   ButtonShape, 
   ButtonSize, 
   ButtonDisabled,
-  ButtonBlock
+  ButtonBlock,
+  ButtonDanger,
+  ButtonGhost,
+  ButtonClassNames,
 } from ".";
 
 interface cClsProps {
@@ -16,10 +19,15 @@ interface cClsProps {
   size: ButtonSize,
   disabled: ButtonDisabled,
   block: ButtonBlock,
+  danger: ButtonDanger,
+  ghost: ButtonGhost,
+  classNames?: ButtonClassNames,
 }
 
 const btnClsDisabled = "disabled";
 const btnClsBlock = "block";
+const btnClsDanger = "danger";
+const btnClsGhost = "ghost";
 
 export const calculateClass = ({
   type,
@@ -27,6 +35,9 @@ export const calculateClass = ({
   size,
   disabled,
   block,
+  danger,
+  ghost,
+  classNames,
 }: cClsProps):string => {
   const defaultClass = btnClsPrefix;
   const classes = [defaultClass];
@@ -45,5 +56,11 @@ export const calculateClass = ({
   if(block){
     classes.push(`${btnClsPrefix}-${btnClsBlock}`);
   }
-  return classNames(classes);
+  if(danger){
+    classes.push(`${btnClsPrefix}-${type}-${btnClsDanger}`)
+  }
+  if(ghost){
+    classes.push(`${btnClsPrefix}-${btnClsGhost}`)
+  }
+  return classnames(classes, classNames);
 }

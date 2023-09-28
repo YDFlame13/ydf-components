@@ -1,0 +1,43 @@
+.ydf-btn-default-danger {
+  border: rgb(247, 77, 77) solid 1px;
+  color: rgb(247, 77, 77);
+  &:hover {
+    color: red;
+    border-color: red;
+  }
+}
+
+.ydf-btn-primary-danger {
+  background-color: rgb(247, 77, 77);
+  &:hover {
+    background-color: red;
+    color: #fff;
+  }
+}
+
+.ydf-btn-dashed-danger {
+  background-color: #fff;
+  border: rgb(247, 77, 77) dashed 1px;
+  color: rgb(247, 77, 77);
+  &:hover {
+    color: red;
+    border-color: red;
+  }
+}
+
+.ydf-btn-link-danger {
+  background-color: #fff;
+  color: rgb(247, 77, 77);
+  &:hover {
+    color: red;
+  }
+}
+
+.ydf-btn-text-danger {
+  background-color: #fff;
+  color: red;
+  &:hover {
+    background-color: #fcb3b3;
+    color: red;
+  }
+}
