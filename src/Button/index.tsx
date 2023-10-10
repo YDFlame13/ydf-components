@@ -10,6 +10,8 @@ export type ButtonDisabled = boolean;
 export type ButtonBlock = boolean;
 export type ButtonDanger = boolean;
 export type ButtonGhost = boolean;
+export type ButtonHtmlType = "button" | "submit" | "reset";
+// export type 
 export type ButtonClassNames = classnames.Argument;
 
 interface ButtonProps {
@@ -20,6 +22,7 @@ interface ButtonProps {
   block?: ButtonBlock,
   danger?: ButtonDanger,
   ghost?: ButtonGhost,
+  htmlType?: ButtonHtmlType,
   classNames?: ButtonClassNames,
   children?: React.ReactNode,
 }
@@ -33,6 +36,7 @@ const Button: React.FC<ButtonProps> = (props) => {
     block = false,
     danger = false,
     ghost = false,
+    htmlType = "button",
     classNames,
     children = null,
   } = props;
@@ -40,7 +44,8 @@ const Button: React.FC<ButtonProps> = (props) => {
   return (
     <button
       className={calculateClass({type, shape, size, disabled, block, danger, ghost, classNames})}
-      type="button"
+      // eslint-disable-next-line react/button-has-type
+      type={htmlType}
       disabled={disabled}
     >
       {children}
